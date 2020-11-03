@@ -1,9 +1,10 @@
+// Import the ORM to create functions that will interact with the database.
+var orm = require("../config/orm.js");
+
 /* 
   Burger Model is in charge of all data related to burgers.
 */
 
-// Import the ORM to create functions that will interact with the database.
-var orm = require("../config/orm.js");
 
 var burger = {
   all: function(cb) {
