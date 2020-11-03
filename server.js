@@ -22,6 +22,7 @@ const app = express();
 
 // Access Public Folder 
 app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 // Parse Request Body as JSON
 app.use(express.urlencoded({ extended: true }));
