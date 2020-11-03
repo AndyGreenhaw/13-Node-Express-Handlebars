@@ -1,8 +1,3 @@
-// Dependencies
-const express = require("express");
-const handlebars = require("express-handlebars")
-// const orm = require("./config/orm.js");
-
 ///////////
 // APP SETUP //
 ///////////
@@ -20,10 +15,10 @@ server - load up our routes
 
 */
 
-const app = express();
-
-// Set PORT for App
+// Dependencies
+var express = require("express");
 const PORT = process.env.PORT || 3013;
+const app = express();
 
 // Access Public Folder 
 app.use(express.static('public'));
@@ -32,12 +27,10 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Set up express app for data parsing
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
 // Set Handlebars.
-app.engine("handlebars", handlebars({ defaultLayout: "main" }));
+var mustache = require("express-handlebars");
+
+app.engine("handlebars", mustache({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import Routes and Give Server Access
