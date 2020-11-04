@@ -1,0 +1,8 @@
+  11/3/2020 10:36:20 PM: Starting composition “Burger Icon”.
+
+  Output To: C:\Users\patgr\OneDrive\Desktop\classwork\homework\homework13\13-Node-Express-Handlebars\public\assets\burger-illustration-andy_[#####].png    11/3/2020 10:36:20 PM: Finished composition “Burger Icon”.
+
+
+  Total Time Elapsed: 0 Seconds
+Log closed on 11/3/2020 at 10:36:20 PM
+
